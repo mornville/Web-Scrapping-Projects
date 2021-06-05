@@ -14,24 +14,23 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 OPTS = webdriver.ChromeOptions()
 OPTS.add_argument("--log-level=3") 
-OPTS.headless = True
+OPTS.headless = False
 ATTRIBUTES = ['SNo.', 'Flight Name', 'Start Time', 'Source', 'Destination', 'Price']
 MAX_NO_OF_TRIES = 6
-NO_OF_ROW = 1
+NO_OF_ROW = 0
+DRIVER =  webdriver.Chrome(ChromeDriverManager().install(), options=OPTS)
 class Scraper:
     def __init__(self, source, dest, startDate):
         self.source = source    
         self.dest = dest
         self.startDate = startDate        
         self.search_url="https://www.ixigo.com/search/result/flight?from="+ self.source + "&to=" + self.dest + "&date="+self.startDate+"&returnDate=&adults=2&children=0&infants=0&class=e&source=Search%20Form"
-        self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=OPTS)
-        self.data = {}
         self.findClassTry = 0
 
 
     def waitForElementToLoad(self, className):
         try:
-            self.driver.find_element_by_class_name(className)
+            DRIVER.find_element_by_class_name(className)
             self.findClassTry = 0
             return
         except:
@@ -45,11 +44,11 @@ class Scraper:
             
 
     def searchByUrl(self, fileName):
-        self.driver.get(self.search_url)
+        DRIVER.get(self.search_url)
         ## Get number of pages
         try:
             self.waitForElementToLoad('page-num')
-            pagesFound = (self.driver.find_elements_by_class_name("page-num"))
+            pagesFound = (DRIVER.find_elements_by_class_name("page-num"))
         except:
             pagesFound = []
       
@@ -68,7 +67,7 @@ class Scraper:
 
     def searchForFlights(self, index, flightData):
         self.waitForElementToLoad('c-flight-listing-row-v2')
-        flightList = self.driver.find_elements_by_class_name("c-flight-listing-row-v2")
+        flightList = DRIVER.find_elements_by_class_name("c-flight-listing-row-v2")
         for flight in flightList:
             airlineInfo = flight.find_element_by_class_name("airline-info")
             flightName, flightNo = airlineInfo.text.split("\n")
@@ -103,7 +102,8 @@ class Scraper:
         
         with open(fileName, 'a') as file:
             writer = csv.writer(file)
-            writer.writerow(NO_OF_ROW, flightData)
+            flightData.insert(0, NO_OF_ROW)
+            writer.writerow(flightData)
             print("Data saved in " + fileName)
 if __name__ == "__main__":
     try:        
@@ -114,10 +114,10 @@ if __name__ == "__main__":
         source = df[0]
         dest = df[1]
  
-        print("Enter date in format(dd-mm-yyyy): ")
+        print("Enter date in format(dd/mm/yyyy): ")
         startDate = input()
-        datetime.datetime.strptime(startDate, "%d-%m-%Y")
-        startDate.replace("/", "")
+        datetime.datetime.strptime(startDate, "%d/%m/%Y")
+        startDate = startDate.replace("/", "")
 
         print("Enter OUTPUT filename without format: ")
         outFile = input() + ".csv"
