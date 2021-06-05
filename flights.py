@@ -3,18 +3,20 @@ Requirements
 pip install webdriver-manager
 pip install selenium
 pip insall webdriver
+pip install pandas
 python flights.py
 """
 
 from selenium import webdriver
 import time, csv
+import pandas as pd
 from webdriver_manager.chrome import ChromeDriverManager
 
 OPTS = webdriver.ChromeOptions()
-OPTS.headless = False
+OPTS.add_argument("--log-level=3") 
+OPTS.headless = True
 ATTRIBUTES = ['SNo.', 'Flight Name', 'Flight No.', 'Source','Start Time', 'Start Date', 'Source Name', 'Destination', 'End Time', 'End Date', 'Destination Name', 'Total Time', 'Flight Type', 'Price']
-MAX_NO_OF_TRIES = 5
-FOUND_DATA = False
+MAX_NO_OF_TRIES = 6
 
 class Scraper:
     def __init__(self, source, dest, startDate):
@@ -67,7 +69,7 @@ class Scraper:
     def searchForFlights(self, index, flightData):
         self.waitForElementToLoad('c-flight-listing-row-v2')
         flightList = self.driver.find_elements_by_class_name("c-flight-listing-row-v2")
-        for flight in flightList:  
+        for flight in flightList:
             airlineInfo = flight.find_element_by_class_name("airline-info")
             flightName, flightNo = airlineInfo.text.split("\n")
             ## Get source information
@@ -82,9 +84,15 @@ class Scraper:
             journeyInfo = flight.find_element_by_class_name("timeline-widget")
             totalTime, flightType = journeyInfo.text.split("\n")
             price = flight.find_element_by_class_name("c-price-display").text
-            
-            if flightType.lower() == 'non-stop':
-                flightData.append([index, flightName, flightNo, sourceCode, startTime, startDate, sourceName, destCode, endTime, endDate, destName, totalTime, flightType, price])
+            if flightType.lower()=='non-stop':
+                if(index != 1):                    
+                    flightData.append(None)
+
+                flightData.append(flightNo)
+                flightData.append(startTime)
+                flightData.append(sourceName)
+                flightData.append(destName)
+                flightData.append(price)
                 index+=1
         return index, flightData
 
@@ -93,29 +101,34 @@ class Scraper:
             print("Couldn't find any data.")
             return
         fileName+=".csv"
-        with open(fileName, 'w') as file:
+        with open(fileName, 'a') as file:
             writer = csv.writer(file)
-            writer.writerow(ATTRIBUTES)
-            for row in flightData:
-                writer.writerow(row)
+            
+            writer.writerow(flightData)
             print("Data saved in " + fileName)
 
 while(True):
     try:
-        print("Enter Source Airport Code: ")
-        sourceCode = input()
-        print("Enter Destination Airport Code: ")
-        destCode = input()
-        print("Enter Travelling date (dd/mm/yyyy format): ")
-        startDate = input()
-        print("Enter File name without any format: ")
+        df = pd.read_csv("input.csv")
+        df.columns = range(df.shape[1])
+        source = df[0]
+        dest = df[1]
+        print("Enter date in format(dd/mm/yyyy): ")
+        startDate = input().replace("/", "")
+        print("Enter file name without format: ")
         fileName = input()
-        startDate = startDate.replace("/", "")
-        a = Scraper(sourceCode, destCode, startDate)
-        a.searchByUrl(fileName)
 
+        print("Enter INPUT filename(Example.csv): ")
+        inpFile = input()
+        with open(inpFile,'w') as file:
+            writer = csv.writer(file)
+            writer.writerow(ATTRIBUTES)
+
+        for i in range(0, len(source)):
+            print(source[i], dest[i])
+            a = Scraper(source[i], dest[i], startDate)
+            a.searchByUrl(fileName)
+        
     except Exception as e:
         print(e)
         print("Try Again")
-
-    

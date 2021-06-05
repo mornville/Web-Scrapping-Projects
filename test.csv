@@ -1,0 +1,74 @@
+SNo.,Flight Name,Flight No.,Source,Start Time,Start Date,Source Name,Destination,End Time,End Date,Destination Name,Total Time,Flight Type,Price
+1,AIRASIA INDIA,I51982,BLR,07:10,"Sun, 11 Jul",Bengaluru,GAU,10:15,"Sun, 11 Jul",Guwahati,3hr 5min,non-stop,7853
+2,AIRASIA INDIA,I52469,BLR,16:45,"Sun, 11 Jul",Bengaluru,GAU,19:50,"Sun, 11 Jul",Guwahati,3hr 5min,non-stop,7853
+3,INDIGO,6E6561,BLR,20:30,"Sun, 11 Jul",Bengaluru,GAU,23:40,"Sun, 11 Jul",Guwahati,3hr 10min,non-stop,7853
+4,VISTARA,UK755,BLR,13:50,"Sun, 11 Jul",Bengaluru,GAU,17:00,"Sun, 11 Jul",Guwahati,3hr 10min,non-stop,7854
+5,INDIGO,6E457,BLR,07:10,"Sun, 11 Jul",Bengaluru,GAU,10:25,"Sun, 11 Jul",Guwahati,3hr 15min,non-stop,7853
+6,INDIGO,"6E714, 6E572",BLR,17:15,"Sun, 11 Jul",Bengaluru,GAU,22:15,"Sun, 11 Jul",Guwahati,5hr,1 stop,3770
+7,SPICEJET,"SG768, SG3725",BLR,14:10,"Sun, 11 Jul",Bengaluru,GAU,20:25,"Sun, 11 Jul",Guwahati,6hr 15min,1 stop,3770
+8,GO FIRST,"G8116, G8151",BLR,07:45,"Sun, 11 Jul",Bengaluru,GAU,14:55,"Sun, 11 Jul",Guwahati,7hr 10min,1 stop,3770
+9,INDIGO,"6E997, 6E572",BLR,15:05,"Sun, 11 Jul",Bengaluru,GAU,22:15,"Sun, 11 Jul",Guwahati,7hr 10min,1 stop,3770
+10,INDIGO,"6E503, 6E568",BLR,11:30,"Sun, 11 Jul",Bengaluru,GAU,17:35,"Sun, 11 Jul",Guwahati,6hr 5min,1 stop,4627
+11,AIRASIA INDIA,"I5992, I5541",BLR,22:45,"Sun, 11 Jul",Bengaluru,GAU,06:40,"Mon, 12 Jul",Guwahati,7hr 55min,1 stop,3770
+12,AIRASIA INDIA,"I5722, I5787",BLR,00:15,"Sun, 11 Jul",Bengaluru,GAU,08:25,"Sun, 11 Jul",Guwahati,8hr 10min,1 stop,3770
+13,INDIGO,"6E952, 6E6623",BLR,22:50,"Sun, 11 Jul",Bengaluru,GAU,07:15,"Mon, 12 Jul",Guwahati,8hr 25min,1 stop,3770
+14,AIRASIA INDIA,"I5592, I5541",BLR,22:05,"Sun, 11 Jul",Bengaluru,GAU,06:40,"Mon, 12 Jul",Guwahati,8hr 35min,1 stop,3770
+15,INDIGO,"6E6779, 6E6058",BLR,02:20,"Sun, 11 Jul",Bengaluru,GAU,11:00,"Sun, 11 Jul",Guwahati,8hr 40min,1 stop,3770
+16,INDIGO,"6E172, 6E7234",BLR,13:00,"Sun, 11 Jul",Bengaluru,GAU,20:35,"Sun, 11 Jul",Guwahati,7hr 35min,1 stop,4627
+17,INDIGO,"6E484, 6E186",BLR,07:10,"Sun, 11 Jul",Bengaluru,GAU,12:25,"Sun, 11 Jul",Guwahati,5hr 15min,1 stop,6340
+18,INDIGO,"6E172, 6E572",BLR,13:00,"Sun, 11 Jul",Bengaluru,GAU,22:15,"Sun, 11 Jul",Guwahati,9hr 15min,1 stop,3770
+19,AIRASIA INDIA,"I5722, I5783",BLR,00:15,"Sun, 11 Jul",Bengaluru,GAU,09:45,"Sun, 11 Jul",Guwahati,9hr 30min,1 stop,3770
+20,AIRASIA INDIA,"I5741, I5776",BLR,11:25,"Sun, 11 Jul",Bengaluru,GAU,20:55,"Sun, 11 Jul",Guwahati,9hr 30min,1 stop,3770
+21,INDIGO,"6E344, 6E568",BLR,08:30,"Sun, 11 Jul",Bengaluru,GAU,17:35,"Sun, 11 Jul",Guwahati,9hr 5min,1 stop,4627
+22,INDIGO,"6E503, 6E7234",BLR,11:30,"Sun, 11 Jul",Bengaluru,GAU,20:35,"Sun, 11 Jul",Guwahati,9hr 5min,1 stop,4627
+23,INDIGO,"6E6651, 6E433",BLR,09:25,"Sun, 11 Jul",Bengaluru,GAU,14:55,"Sun, 11 Jul",Guwahati,5hr 30min,1 stop,7247
+24,INDIGO,"6E6212, 6E882",BLR,10:40,"Sun, 11 Jul",Bengaluru,GAU,16:30,"Sun, 11 Jul",Guwahati,5hr 50min,1 stop,7197
+25,INDIGO,"6E443, 6E6059",BLR,06:20,"Sun, 11 Jul",Bengaluru,GAU,12:25,"Sun, 11 Jul",Guwahati,6hr 5min,1 stop,7033
+26,INDIGO,"6E524, 6E316",BLR,11:10,"Sun, 11 Jul",Bengaluru,GAU,17:00,"Sun, 11 Jul",Guwahati,5hr 50min,1 stop,7247
+27,INDIGO,"6E2186, 6E889",BLR,07:50,"Sun, 11 Jul",Bengaluru,GAU,15:05,"Sun, 11 Jul",Guwahati,7hr 15min,1 stop,6340
+28,INDIGO,"6E6817, 6E6812",BLR,16:35,"Sun, 11 Jul",Bengaluru,GAU,23:25,"Sun, 11 Jul",Guwahati,6hr 50min,1 stop,6957
+29,INDIGO,"6E871, 6E2001",BLR,09:30,"Sun, 11 Jul",Bengaluru,GAU,17:45,"Sun, 11 Jul",Guwahati,8hr 15min,1 stop,6340
+30,INDIGO,"6E5708, 6E889",BLR,06:35,"Sun, 11 Jul",Bengaluru,GAU,15:05,"Sun, 11 Jul",Guwahati,8hr 30min,1 stop,6340
+31,INDIGO,"6E541, 6E882",BLR,09:15,"Sun, 11 Jul",Bengaluru,GAU,16:30,"Sun, 11 Jul",Guwahati,7hr 15min,1 stop,7197
+32,INDIGO,"6E6825, 6E882",BLR,08:15,"Sun, 11 Jul",Bengaluru,GAU,16:30,"Sun, 11 Jul",Guwahati,8hr 15min,1 stop,7197
+33,INDIGO,"6E2018, 6E889",BLR,05:10,"Sun, 11 Jul",Bengaluru,GAU,15:05,"Sun, 11 Jul",Guwahati,9hr 55min,1 stop,6340
+34,INDIGO,"6E2186, 6E2001",BLR,07:50,"Sun, 11 Jul",Bengaluru,GAU,17:45,"Sun, 11 Jul",Guwahati,9hr 55min,1 stop,6340
+35,INDIGO,"6E6269, 6E882",BLR,07:10,"Sun, 11 Jul",Bengaluru,GAU,16:30,"Sun, 11 Jul",Guwahati,9hr 20min,1 stop,7197
+36,VISTARA,"UK816, UK721",BLR,11:30,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Sun, 11 Jul",Guwahati,6hr,1 stop,9657
+37,AIRASIA INDIA,"I51451, I5792",BLR,06:05,"Sun, 11 Jul",Bengaluru,GAU,15:20,"Sun, 11 Jul",Guwahati,9hr 15min,2 stops,3770
+38,VISTARA,"UK812, UK721",BLR,09:45,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Sun, 11 Jul",Guwahati,7hr 45min,1 stop,9657
+39,VISTARA,"UK808, UK721",BLR,08:00,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Sun, 11 Jul",Guwahati,9hr 30min,1 stop,9657
+40,AIRASIA INDIA,"I51324, I5776",BLR,05:45,"Sun, 11 Jul",Bengaluru,GAU,20:55,"Sun, 11 Jul",Guwahati,15hr 10min,2 stops,3770
+41,AIRASIA INDIA,"I51427, I5792",BLR,21:15,"Sun, 11 Jul",Bengaluru,GAU,15:20,"Mon, 12 Jul",Guwahati,18hr 5min,2 stops,3770
+42,AIRASIA INDIA,"I5991, I5792",BLR,19:45,"Sun, 11 Jul",Bengaluru,GAU,15:20,"Mon, 12 Jul",Guwahati,19hr 35min,2 stops,3770
+43,VISTARA,"UK858, UK994, UK721",BLR,06:40,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Sun, 11 Jul",Guwahati,10hr 50min,2 stops,12607
+44,VISTARA,"UK858, UK960, UK721",BLR,06:40,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Sun, 11 Jul",Guwahati,10hr 50min,2 stops,12607
+45,VISTARA,"UK897, UK860, UK741",BLR,21:30,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,14hr 35min,2 stops,11907
+46,VISTARA,"UK866, UK928, UK741",BLR,21:40,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,14hr 25min,2 stops,12607
+47,VISTARA,"UK866, UK954, UK741",BLR,21:40,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,14hr 25min,2 stops,12607
+48,VISTARA,"UK850, UK954, UK741",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,16hr 10min,2 stops,12607
+49,VISTARA,"UK850, UK928, UK741",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,16hr 10min,2 stops,12607
+50,VISTARA,"UK850, UK986, UK741",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,16hr 10min,2 stops,12607
+51,VISTARA,"UK854, UK954, UK741",BLR,18:25,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,17hr 40min,2 stops,12607
+52,VISTARA,"UK854, UK988, UK741",BLR,18:25,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,17hr 40min,2 stops,12607
+53,VISTARA,"UK854, UK928, UK741",BLR,18:25,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,17hr 40min,2 stops,12607
+54,VISTARA,"UK854, UK986, UK741",BLR,18:25,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,17hr 40min,2 stops,12607
+55,VISTARA,"UK854, UK950, UK741",BLR,18:25,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,17hr 40min,2 stops,12607
+56,VISTARA,"UK897, UK830, UK721",BLR,21:30,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,20hr,2 stops,11907
+57,VISTARA,"UK897, UK860, UK721",BLR,21:30,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,20hr,2 stops,11907
+58,VISTARA,"UK801, UK832, UK721",BLR,21:30,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,20hr,2 stops,12257
+59,VISTARA,"UK801, UK836, UK721",BLR,21:30,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,20hr,2 stops,12257
+60,VISTARA,"UK866, UK954, UK721",BLR,21:40,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,19hr 50min,2 stops,12607
+61,VISTARA,"UK866, UK994, UK721",BLR,21:40,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,19hr 50min,2 stops,12607
+62,VISTARA,"UK866, UK960, UK721",BLR,21:40,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,19hr 50min,2 stops,12607
+63,VISTARA,"UK866, UK928, UK721",BLR,21:40,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,19hr 50min,2 stops,12607
+64,VISTARA,"UK850, UK954, UK721",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,21hr 35min,2 stops,12607
+65,VISTARA,"UK850, UK928, UK721",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,21hr 35min,2 stops,12607
+66,VISTARA,"UK850, UK986, UK721",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,21hr 35min,2 stops,12607
+67,VISTARA,"UK850, UK960, UK721",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,21hr 35min,2 stops,12607
+68,VISTARA,"UK850, UK994, UK721",BLR,19:55,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,21hr 35min,2 stops,12607
+69,VISTARA,"UK867, UK848, UK741",BLR,12:20,"Sun, 11 Jul",Bengaluru,GAU,12:05,"Mon, 12 Jul",Guwahati,23hr 45min,2 stops,12957
+70,VISTARA,"UK867, UK848, UK721",BLR,12:20,"Sun, 11 Jul",Bengaluru,GAU,17:30,"Mon, 12 Jul",Guwahati,29hr 10min,2 stops,12957
+71,AIR INDIA,"AI776, AI415, AI889",BLR,05:45,"Sun, 11 Jul",Bengaluru,GAU,12:10,"Mon, 12 Jul",Guwahati,30hr 25min,2 stops,15254
+72,AIR INDIA,"AI776, AI402, AI889",BLR,05:45,"Sun, 11 Jul",Bengaluru,GAU,12:10,"Mon, 12 Jul",Guwahati,30hr 25min,2 stops,15254
+73,AIR INDIA,"AI9505, AI511, AI889",BLR,09:00,"Sun, 11 Jul",Bengaluru,GAU,12:10,"Mon, 12 Jul",Guwahati,27hr 10min,3 stops,13807
