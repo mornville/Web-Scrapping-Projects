@@ -8,16 +8,16 @@ python flights.py
 """
 
 from selenium import webdriver
-import time, csv
+import time, csv, datetime
 import pandas as pd
 from webdriver_manager.chrome import ChromeDriverManager
 
 OPTS = webdriver.ChromeOptions()
 OPTS.add_argument("--log-level=3") 
 OPTS.headless = True
-ATTRIBUTES = ['SNo.', 'Flight Name', 'Flight No.', 'Source','Start Time', 'Start Date', 'Source Name', 'Destination', 'End Time', 'End Date', 'Destination Name', 'Total Time', 'Flight Type', 'Price']
+ATTRIBUTES = ['SNo.', 'Flight Name', 'Start Time', 'Source', 'Destination', 'Price']
 MAX_NO_OF_TRIES = 6
-
+NO_OF_ROW = 1
 class Scraper:
     def __init__(self, source, dest, startDate):
         self.source = source    
@@ -100,34 +100,37 @@ class Scraper:
         if len(flightData) ==  0:
             print("Couldn't find any data.")
             return
-        fileName+=".csv"
+        
         with open(fileName, 'a') as file:
             writer = csv.writer(file)
-            
-            writer.writerow(flightData)
+            writer.writerow(NO_OF_ROW, flightData)
             print("Data saved in " + fileName)
-
-while(True):
-    try:
-        df = pd.read_csv("input.csv")
+if __name__ == "__main__":
+    try:        
+        print("Enter INPUT filename without format: ")
+        inpFile = input() + ".csv"
+        df = pd.read_csv(inpFile)
         df.columns = range(df.shape[1])
         source = df[0]
         dest = df[1]
-        print("Enter date in format(dd/mm/yyyy): ")
-        startDate = input().replace("/", "")
-        print("Enter file name without format: ")
-        fileName = input()
+ 
+        print("Enter date in format(dd-mm-yyyy): ")
+        startDate = input()
+        datetime.datetime.strptime(startDate, "%d-%m-%Y")
+        startDate.replace("/", "")
 
-        print("Enter INPUT filename(Example.csv): ")
-        inpFile = input()
-        with open(inpFile,'w') as file:
+        print("Enter OUTPUT filename without format: ")
+        outFile = input() + ".csv"
+
+        with open(outFile,'w') as file:
             writer = csv.writer(file)
             writer.writerow(ATTRIBUTES)
 
         for i in range(0, len(source)):
             print(source[i], dest[i])
+            NO_OF_ROW+=1
             a = Scraper(source[i], dest[i], startDate)
-            a.searchByUrl(fileName)
+            a.searchByUrl(outFile)
         
     except Exception as e:
         print(e)
