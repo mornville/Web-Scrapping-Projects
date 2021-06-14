@@ -1,7 +1,9 @@
 from bs4 import BeautifulSoup
 import  requests
+USERNAME = 'mornville'
+city, state, country, profession = '', '', '', ''
 try:
-    url = requests.get('https://www.codechef.com/users/mornville')
+    url = requests.get('https://www.codechef.com/users/' + USERNAME)
     page_source = BeautifulSoup(url.content,'lxml')
 
     # For Username
@@ -12,6 +14,14 @@ try:
         for li in lis:
             if "Username" in li.text:
                 username = (li.text.split("★"))[1]
+            if "City" in li.text:
+                city = li.text.split(':')[1]
+            if "Country" in li.text:
+                country = li.text.split(':')[1]
+            if "State" in li.text:
+                state = li.text.split(':')[1]
+            if "Student/Professional" in li.text:
+                profession = li.text.split(':')[1]
     # Other Content
     try:
         # ratings of the user
@@ -44,10 +54,12 @@ try:
         img = page_source.findAll('div', class_='user-details-container')
         for i in img:
             avatar = BeautifulSoup(str(i), 'lxml').find_all('img')[0]['src']
-    except:
-        print("Couldn't get the data")
+    except Exception as e:
+        print("Couldn't get the data->", e)
 
-    print('\nUsername: '+ username + 'Global Rank:' + global_rating)
+    print('\nUsername: '+ str(username) + 'Global Rank: ' + global_rating)
+    print('Location: ' + city + ', ' + state + ', ' + country)
+    print('Profession/Student: ' + profession)
     print('Highest Rating:' + highest)
     print('Avatar Url:', avatar)
     print("\nFully solved Problems - {0} Practice Problems and {1} Other Problems".format(fully_practice,fully_others) )
@@ -56,6 +68,6 @@ try:
     # print('Partially Solved - \n Practice({0}) and Others({1})'%(partial_practice,partial_others))
 
 
-except:
-    print("Couldn't parse the url")
+except Exception as e:
+    print("Couldn't parse the url->", e)
 
