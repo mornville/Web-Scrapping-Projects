@@ -1,5 +1,4 @@
 # Web Scraping 
-Contains following Web Scraping Projects
 
 ## > Ixigo Scraper
 Takes input of (source, destination) from csv file and writes flight information into another csv file.<br/><br/>
