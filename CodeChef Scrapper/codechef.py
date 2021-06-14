@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import  requests
-USERNAME = 'mornville'
+USERNAME = input("Enter username: ")
 city, state, country, profession = '', '', '', ''
 try:
     url = requests.get('https://www.codechef.com/users/' + USERNAME)

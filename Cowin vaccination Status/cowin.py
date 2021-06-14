@@ -36,6 +36,7 @@ def get_url_data_helper(URL):
     return json_result
 
 def findByPin(date):
+    FOUND = False
     for pin in PIN:
         try:
             URL = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode={}&date={}".format(pin,date)
@@ -43,17 +44,20 @@ def findByPin(date):
             
             if json_result["sessions"]:
                 for sess_idx, session in enumerate(json_result["sessions"]):
-                    if session["min_age_limit"] == MIN_AGE_LIMIT:
-                        if session["available_capacity"]>=0:
+                    if session["min_age_limit"] <= MIN_AGE_LIMIT:
+                        if session["available_capacity"]>0:
                             print()
                             print('-'*50)
                             print("Date Available: " +  session["date"] +", "+ session["from"] + " to " + str(session["to"]))
                             print('> ' + session["name"] + ", " + str(session["center_id"]) )
                             print("Dose 1: " + str(session["available_capacity_dose1"])) 
                             print("Dose 2: " + str(session["available_capacity_dose2"]))
-
+                            FOUND = True
         except Exception as e:
             print(e)
+    if(not FOUND):
+        print("No Vaccination slots found")
+    
     print('-'*50)                            
 
 
@@ -68,6 +72,10 @@ def findByDistrict(date):
 
 if __name__=="__main__":
     TOTAL_DAYS = 7
-    MIN_AGE_LIMIT = 45
-    PIN = ["562157", "560063"]
-    findByPin('16/06/2021')
+    MIN_AGE_LIMIT = int(input("Enter minimum age limit: "))
+    PIN = [x for x in input("Enter zipcodes of places seperated by (,)\n").replace(' ', '').split(',')]
+    date = input("Enter date in format(dd/mm/yyyy): ")
+    datetime.strptime(date, "%d/%m/%Y")
+    date = date.replace("/", "")
+    findByPin(date)
+ 
