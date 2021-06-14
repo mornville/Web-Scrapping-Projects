@@ -13,7 +13,7 @@ import datetime
 from webdriver_manager.chrome import ChromeDriverManager
 
 OPTS = webdriver.ChromeOptions()
-OPTS.add_argument("--log--level-3")
+OPTS.add_argument("--log-level=3")
 OPTS.headless = True
 ATTRIBUTES = ['SNo.', 'Flight Name', 'Flight No.', 'Source', 'Destination', 'Source Name','Destination Name','Start Time','End Time', 'Total Time', 'Stops', 'Price']
 MAX_NO_OF_TRIES = 10
@@ -68,7 +68,6 @@ class Scraper:
                     page.click()
                 flightData  = (self.searchForFlights(flightData))                    
         ## Writing data extracted into csv
-        print(flightData)
         self.writeIntoCsv(flightData, fileName)
         return self.count
 
@@ -97,7 +96,8 @@ class Scraper:
     def writeIntoCsv(self, flightData, fileName):
         if len(flightData) ==  0:
             print("Couldn't find any data.")
-            return        
+            return       
+        print("\n" + str(len(flightData)) + " number of flights found, writing into " + fileName + "....") 
         with open(fileName, 'a') as file:
             writer = csv.writer(file)
             for row in flightData:
@@ -108,30 +108,38 @@ class Scraper:
 
 if __name__=="__main__":
     try:
-        print("Enter INPUT filename without format: ")
-        inpFile = input() + ".csv"
+        print('\n' + '*'*50)
+        inpFile = input("Enter INPUT filename without format: ") + ".csv"
         df = pd.read_csv(inpFile)
         df.columns = range(df.shape[1])
         source = df[0]
         dest = df[1]
 
-        print("Enter date in format(dd/mm/yyyy): ")
-        startDate = input()
+        startDate = input("Enter date in format(dd/mm/yyyy): ")
         datetime.datetime.strptime(startDate, "%d/%m/%Y")
         startDate = startDate.replace("/", "")
 
-        print("Enter OUTPUT filename without format: ")
-        outFile = input() + ".csv"
+        outFile = input("Enter OUTPUT filename without format: ") + ".csv"
+
+        print('\n' + '*'*50)
 
         with open(outFile,'w') as file:
             writer = csv.writer(file)
             writer.writerow(ATTRIBUTES)
         
         count = 0
-        for i in range(0, len(source)):
-            print("Finding Flights for : " + source[i] + " to " + dest[i])
-            a = Scraper(source[i], dest[i], startDate, count)
-            count = a.searchByUrl(outFile)
+        for i in range(0, len(source)):  
+            try:          
+                print('\n' + '-'*50)
+                print("Finding Flights for : " + source[i] + " to " + dest[i])
+                a = Scraper(source[i], dest[i], startDate, count)
+                count = a.searchByUrl(outFile)
+            except Exception as e:
+                print(e)
+                pass
+        print('\n' + '-'*50)
+   
+        print("Total " + str(count) + " number of flights found.")
 
     except Exception as e:
         print(e)

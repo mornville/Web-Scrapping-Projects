@@ -1,0 +1,119 @@
+SNo.,Flight Name,Flight No.,Source,Destination,Source Name,Destination Name,Start Time,End Time,Total Time,Stops,Price
+1,SPICEJET,SG8191,DEL,BLR,New Delhi,Bengaluru,06:15,08:50,2hr 35min,non-stop,6795
+2,GO FIRST,G8113,DEL,BLR,New Delhi,Bengaluru,05:50,08:25,2hr 35min,non-stop,6796
+3,GO FIRST,G8119,DEL,BLR,New Delhi,Bengaluru,20:30,23:05,2hr 35min,non-stop,6796
+4,INDIGO,6E5174,DEL,BLR,New Delhi,Bengaluru,05:15,07:55,2hr 40min,non-stop,6795
+5,AIR INDIA,AI504,DEL,BLR,New Delhi,Bengaluru,21:15,23:55,2hr 40min,non-stop,6795
+6,AIRASIA INDIA,I5784,DEL,BLR,New Delhi,Bengaluru,16:05,18:45,2hr 40min,non-stop,6796
+7,VISTARA,UK807,DEL,BLR,New Delhi,Bengaluru,20:40,23:20,2hr 40min,non-stop,6796
+8,INDIGO,6E6233,DEL,BLR,New Delhi,Bengaluru,02:25,05:10,2hr 45min,non-stop,6795
+9,AIR INDIA,AI803,DEL,BLR,New Delhi,Bengaluru,06:10,08:55,2hr 45min,non-stop,6795
+10,INDIGO,6E772,DEL,BLR,New Delhi,Bengaluru,07:20,10:05,2hr 45min,non-stop,6795
+11,INDIGO,6E5169,DEL,BLR,New Delhi,Bengaluru,11:00,13:45,2hr 45min,non-stop,6795
+12,INDIGO,6E2839,DEL,BLR,New Delhi,Bengaluru,15:05,17:50,2hr 45min,non-stop,6795
+13,INDIGO,6E2015,DEL,BLR,New Delhi,Bengaluru,19:55,22:40,2hr 45min,non-stop,6795
+14,INDIGO,6E6177,DEL,BLR,New Delhi,Bengaluru,22:20,01:05,2hr 45min,non-stop,6795
+15,INDIGO,6E798,DEL,BLR,New Delhi,Bengaluru,23:15,02:00,2hr 45min,non-stop,6795
+16,VISTARA,UK811,DEL,BLR,New Delhi,Bengaluru,06:15,09:00,2hr 45min,non-stop,6796
+17,VISTARA,UK815,DEL,BLR,New Delhi,Bengaluru,08:05,10:50,2hr 45min,non-stop,6796
+18,AIRASIA INDIA,I5926,DEL,BLR,New Delhi,Bengaluru,09:15,12:00,2hr 45min,non-stop,6796
+19,VISTARA,UK817,DEL,BLR,New Delhi,Bengaluru,16:05,18:50,2hr 45min,non-stop,6796
+20,INDIGO,6E681,DEL,BLR,New Delhi,Bengaluru,13:00,15:50,2hr 50min,non-stop,6795
+21,INDIGO,6E781,DEL,BLR,New Delhi,Bengaluru,16:25,19:15,2hr 50min,non-stop,6795
+22,INDIGO,6E654,DEL,BLR,New Delhi,Bengaluru,18:00,20:50,2hr 50min,non-stop,6795
+23,SPICEJET,SG143,DEL,BLR,New Delhi,Bengaluru,20:05,22:55,2hr 50min,non-stop,6795
+24,AIRASIA INDIA,I5740,DEL,BLR,New Delhi,Bengaluru,08:00,10:50,2hr 50min,non-stop,6796
+25,VISTARA,UK819,DEL,BLR,New Delhi,Bengaluru,14:15,17:05,2hr 50min,non-stop,6796
+26,VISTARA,UK813,DEL,BLR,New Delhi,Bengaluru,17:35,20:25,2hr 50min,non-stop,6796
+27,VISTARA,UK809,DEL,BLR,New Delhi,Bengaluru,19:50,22:40,2hr 50min,non-stop,6796
+28,AIRASIA INDIA,I5721,DEL,BLR,New Delhi,Bengaluru,20:50,23:40,2hr 50min,non-stop,6796
+29,INDIGO,6E2637,DEL,BLR,New Delhi,Bengaluru,18:45,21:40,2hr 55min,non-stop,6795
+30,GO FIRST,G8286,DEL,BLR,New Delhi,Bengaluru,10:40,14:55,4hr 15min,1 stop,6796
+31,GO FIRST,G8404,DEL,BLR,New Delhi,Bengaluru,10:20,14:40,4hr 20min,1 stop,6796
+32,AIRASIA INDIA,"I5757, I51518",DEL,BLR,New Delhi,Bengaluru,16:25,20:55,4hr 30min,1 stop,6796
+33,GO FIRST,"G8713, G8804",DEL,BLR,New Delhi,Bengaluru,20:05,00:40,4hr 35min,1 stop,6801
+34,INDIGO,"6E2187, 6E479",DEL,BLR,New Delhi,Bengaluru,11:35,16:25,4hr 50min,1 stop,6795
+35,GO FIRST,"G82513, G8242",DEL,BLR,New Delhi,Bengaluru,14:00,18:50,4hr 50min,1 stop,6801
+36,INDIGO,"6E723, 6E949",DEL,BLR,New Delhi,Bengaluru,19:15,00:15,5hr,1 stop,6795
+37,INDIGO,"6E5037, 6E133",DEL,BLR,New Delhi,Bengaluru,05:25,10:30,5hr 5min,1 stop,6795
+38,INDIGO,"6E5071, 6E799",DEL,BLR,New Delhi,Bengaluru,15:45,20:50,5hr 5min,1 stop,6795
+39,GO FIRST,"G82501, G8317",DEL,BLR,New Delhi,Bengaluru,02:40,07:45,5hr 5min,1 stop,6801
+40,GO FIRST,"G8167, G8375",DEL,BLR,New Delhi,Bengaluru,17:50,22:55,5hr 5min,1 stop,6801
+41,INDIGO,"6E5051, 6E703",DEL,BLR,New Delhi,Bengaluru,07:40,12:50,5hr 10min,1 stop,6795
+42,INDIGO,"6E171, 6E199",DEL,BLR,New Delhi,Bengaluru,02:30,07:45,5hr 15min,1 stop,6795
+43,INDIGO,"6E6205, 6E6417",DEL,BLR,New Delhi,Bengaluru,13:35,18:50,5hr 15min,1 stop,6795
+44,AIRASIA INDIA,"I5482, I5339",DEL,BLR,New Delhi,Bengaluru,20:55,02:10,5hr 15min,1 stop,6796
+45,INDIGO,"6E5379, 6E5338",DEL,BLR,New Delhi,Bengaluru,04:55,10:15,5hr 20min,1 stop,6795
+46,INDIGO,"6E5234, 6E406",DEL,BLR,New Delhi,Bengaluru,05:50,11:10,5hr 20min,1 stop,6795
+47,AIRASIA INDIA,"I5768, I51427",DEL,BLR,New Delhi,Bengaluru,15:25,20:45,5hr 20min,1 stop,6796
+48,GO FIRST,"G8323, G8398",DEL,BLR,New Delhi,Bengaluru,18:20,23:45,5hr 25min,1 stop,6801
+49,INDIGO,"6E2044, 6E6281",DEL,BLR,New Delhi,Bengaluru,12:10,17:40,5hr 30min,1 stop,6795
+50,INDIGO,"6E665, 6E6093",DEL,BLR,New Delhi,Bengaluru,21:55,03:25,5hr 30min,1 stop,6795
+51,INDIGO,"6E2506, 6E6564",DEL,BLR,New Delhi,Bengaluru,06:45,12:20,5hr 35min,1 stop,6795
+52,INDIGO,"6E5003, 6E805",DEL,BLR,New Delhi,Bengaluru,08:55,14:30,5hr 35min,1 stop,6795
+53,INDIGO,"6E5006, 6E996",DEL,BLR,New Delhi,Bengaluru,20:10,01:45,5hr 35min,1 stop,6795
+54,INDIGO,"6E5625, 6E5305",DEL,BLR,New Delhi,Bengaluru,20:30,02:05,5hr 35min,1 stop,6795
+55,INDIGO,"6E864, 6E806",DEL,BLR,New Delhi,Bengaluru,15:40,21:20,5hr 40min,1 stop,6795
+56,AIRASIA INDIA,"I5798, I51321",DEL,BLR,New Delhi,Bengaluru,12:40,18:20,5hr 40min,1 stop,6796
+57,INDIGO,"6E5177, 6E253",DEL,BLR,New Delhi,Bengaluru,06:25,12:10,5hr 45min,1 stop,6795
+58,SPICEJET,"SG8645, SG3234",DEL,BLR,New Delhi,Bengaluru,07:00,12:45,5hr 45min,1 stop,6795
+59,INDIGO,"6E2334, 6E144",DEL,BLR,New Delhi,Bengaluru,10:00,15:45,5hr 45min,1 stop,6795
+60,INDIGO,"6E2967, 6E6505",DEL,BLR,New Delhi,Bengaluru,17:15,23:00,5hr 45min,1 stop,6795
+61,INDIGO,"6E2169, 6E7219",DEL,BLR,New Delhi,Bengaluru,17:15,23:10,5hr 55min,1 stop,7362
+62,GO FIRST,"G8194, G8286",DEL,BLR,New Delhi,Bengaluru,07:55,14:55,7hr,1 stop,6801
+63,AIRASIA INDIA,"I5783, I51983",DEL,BLR,New Delhi,Bengaluru,06:55,14:00,7hr 5min,1 stop,6796
+64,GO FIRST,"G8392, G8325",DEL,BLR,New Delhi,Bengaluru,15:45,22:55,7hr 10min,1 stop,6801
+65,AIRASIA INDIA,"I5744, I5820",DEL,BLR,New Delhi,Bengaluru,09:25,16:45,7hr 20min,1 stop,6796
+66,SPICEJET,"SG2643, SG208",DEL,BLR,New Delhi,Bengaluru,06:00,13:35,7hr 35min,1 stop,6795
+67,GO FIRST,"G8145, G8402",DEL,BLR,New Delhi,Bengaluru,08:45,16:30,7hr 45min,1 stop,6801
+68,AIRASIA INDIA,"I5787, I51983",DEL,BLR,New Delhi,Bengaluru,06:10,14:00,7hr 50min,1 stop,6796
+69,SPICEJET,"SG2770, SG584",DEL,BLR,New Delhi,Bengaluru,07:00,15:05,8hr 5min,1 stop,6795
+70,AIRASIA INDIA,"I5314, I5942",DEL,BLR,New Delhi,Bengaluru,05:45,14:00,8hr 15min,1 stop,6796
+71,AIRASIA INDIA,"I5710, I52393",DEL,BLR,New Delhi,Bengaluru,10:05,18:20,8hr 15min,1 stop,6796
+72,AIRASIA INDIA,"I5757, I5974",DEL,BLR,New Delhi,Bengaluru,16:25,01:00,8hr 35min,1 stop,6796
+73,INDIGO,"6E2275, 6E532",DEL,BLR,New Delhi,Bengaluru,06:15,11:35,5hr 20min,1 stop,9063
+74,AIRASIA INDIA,"I5559, I5335",DEL,BLR,New Delhi,Bengaluru,15:40,00:25,8hr 45min,1 stop,6796
+75,VISTARA,"UK993, UK853",DEL,BLR,New Delhi,Bengaluru,12:50,17:45,4hr 55min,1 stop,9525
+76,SPICEJET,SG3723,GAU,PAT,Guwahati,Patna,06:45,08:25,1hr 40min,non-stop,4739
+77,INDIGO,"6E394, 6E599",GAU,PAT,Guwahati,Patna,12:15,17:45,5hr 30min,1 stop,4789
+78,INDIGO,"6E6058, 6E6277",GAU,PAT,Guwahati,Patna,11:30,17:10,5hr 40min,1 stop,4789
+79,INDIGO,"6E2906, 6E2323",GAU,PAT,Guwahati,Patna,12:55,19:10,6hr 15min,1 stop,4789
+80,INDIGO,"6E2329, 6E657",GAU,PAT,Guwahati,Patna,06:55,14:20,7hr 25min,1 stop,4789
+81,INDIGO,"6E2614, 6E2323",GAU,PAT,Guwahati,Patna,11:10,19:10,8hr,1 stop,4789
+82,INDIGO,"6E2329, 6E5066",GAU,PAT,Guwahati,Patna,06:55,15:55,9hr,1 stop,4789
+83,INDIGO,"6E2329, 6E761",GAU,PAT,Guwahati,Patna,06:55,17:20,10hr 25min,1 stop,5389
+84,INDIGO,"6E2329, 6E2323",GAU,PAT,Guwahati,Patna,06:55,19:10,12hr 15min,1 stop,4789
+85,VISTARA,"UK742, UK715",GAU,PAT,Guwahati,Patna,12:40,19:55,7hr 15min,1 stop,8367
+86,GO FIRST,"G8758, G8143",GAU,PAT,Guwahati,Patna,17:55,07:25,13hr 30min,1 stop,4741
+87,AIR INDIA,"AI9742, AI732",GAU,PAT,Guwahati,Patna,13:05,20:40,7hr 35min,1 stop,8739
+88,GO FIRST,"G8152, G8143",GAU,PAT,Guwahati,Patna,15:30,07:25,15hr 55min,1 stop,4741
+89,AIR INDIA,"AI890, AI409",GAU,PAT,Guwahati,Patna,15:45,12:10,20hr 25min,1 stop,10839
+90,AIR INDIA,"AI9742, AI763, AI409",GAU,PAT,Guwahati,Patna,13:05,12:10,23hr 5min,2 stops,13439
+91,AIR INDIA,"AI9742, AI415, AI409",GAU,PAT,Guwahati,Patna,13:05,12:10,23hr 5min,2 stops,13439
+92,AIR INDIA,"AI9742, AI763, AI415",GAU,PAT,Guwahati,Patna,13:05,18:45,29hr 40min,2 stops,13439
+93,VISTARA,"UK756, UK816, UK715",GAU,PAT,Guwahati,Patna,17:45,19:55,26hr 10min,2 stops,15779
+94,VISTARA,"UK756, UK808, UK715",GAU,PAT,Guwahati,Patna,17:45,19:55,26hr 10min,2 stops,15779
+95,VISTARA,"UK756, UK812, UK715",GAU,PAT,Guwahati,Patna,17:45,19:55,26hr 10min,2 stops,15779
+96,VISTARA,"UK756, UK810, UK715",GAU,PAT,Guwahati,Patna,17:45,19:55,26hr 10min,2 stops,15779
+97,AIR INDIA,"AI890, AI803, AI573",GAU,PAT,Guwahati,Patna,15:45,21:20,29hr 35min,2 stops,19039
+98,AIR INDIA,"AI890, AI504, AI573",GAU,PAT,Guwahati,Patna,15:45,21:20,29hr 35min,2 stops,19039
+99,SPICEJET,SG3725,PAT,GAU,Patna,Guwahati,18:30,20:25,1hr 55min,non-stop,4477
+100,INDIGO,"6E342, 6E572",PAT,GAU,Patna,Guwahati,18:20,22:15,3hr 55min,1 stop,4527
+101,INDIGO,"6E775, 6E568",PAT,GAU,Patna,Guwahati,13:20,17:35,4hr 15min,1 stop,4527
+102,INDIGO,"6E6927, 6E568",PAT,GAU,Patna,Guwahati,11:20,17:35,6hr 15min,1 stop,4527
+103,INDIGO,"6E2163, 6E889",PAT,GAU,Patna,Guwahati,08:45,15:05,6hr 20min,1 stop,4527
+104,INDIGO,"6E732, 6E2001",PAT,GAU,Patna,Guwahati,11:10,17:45,6hr 35min,1 stop,4527
+105,INDIGO,"6E775, 6E7234",PAT,GAU,Patna,Guwahati,13:20,20:35,7hr 15min,1 stop,4527
+106,INDIGO,"6E663, 6E568",PAT,GAU,Patna,Guwahati,08:40,17:35,8hr 55min,1 stop,4527
+107,INDIGO,"6E775, 6E572",PAT,GAU,Patna,Guwahati,13:20,22:15,8hr 55min,1 stop,4527
+108,INDIGO,"6E2163, 6E2001",PAT,GAU,Patna,Guwahati,08:45,17:45,9hr,1 stop,4527
+109,INDIGO,"6E6927, 6E7234",PAT,GAU,Patna,Guwahati,11:20,20:35,9hr 15min,1 stop,4527
+110,INDIGO,"6E908, 6E2251",PAT,GAU,Patna,Guwahati,19:40,07:50,12hr 10min,1 stop,4527
+111,AIR INDIA,"AI415, AI9741",PAT,GAU,Patna,Guwahati,19:10,07:35,12hr 25min,1 stop,7777
+112,AIR INDIA,"AI726, AI9741",PAT,GAU,Patna,Guwahati,17:40,07:35,13hr 55min,1 stop,7777
+113,VISTARA,"UK716, UK741",PAT,GAU,Patna,Guwahati,20:30,12:05,15hr 35min,1 stop,8105
+114,AIR INDIA,"AI410, AI762, AI9741",PAT,GAU,Patna,Guwahati,12:40,07:35,18hr 55min,2 stops,12477
+115,AIR INDIA,"AI726, AI415, AI889",PAT,GAU,Patna,Guwahati,17:40,12:10,18hr 30min,2 stops,15277
+116,VISTARA,"UK716, UK815, UK755",PAT,GAU,Patna,Guwahati,20:30,17:00,20hr 30min,2 stops,15517
+117,VISTARA,"UK716, UK811, UK755",PAT,GAU,Patna,Guwahati,20:30,17:00,20hr 30min,2 stops,15517
+118,AIR INDIA,"AI725, AI480, AI889",PAT,GAU,Patna,Guwahati,10:55,12:10,25hr 15min,2 stops,12740
